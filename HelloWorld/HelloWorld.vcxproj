@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="hello.c" />
     <ClCompile Include="new game.c" />
+    <ClCompile Include="컴파일러.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

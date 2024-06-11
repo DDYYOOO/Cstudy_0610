@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
+int main1()
 {
     char targetWord[] = "apple"; // 추측할 단어
     char guess[20]; // 사용자의 추측을 저장할 배열
