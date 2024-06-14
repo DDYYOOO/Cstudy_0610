@@ -52,7 +52,7 @@ void lectures4()
 	// (3) 변수를 동시에 선언, 단 데이터 형태 같은 것만!
 	int num3, num4, num5;
 	num3 = 10, num4 = 20, num5 = 30;
-	printf("%d %d %d", num3, num4, num5);
+	printf("%d %d %d\n", num3, num4, num5);
 	// (4) 변수를 동시에 선언과 함께 할당;
 
 	// 변수 이름 작성 시 주의 사항(제한 사항)
@@ -84,7 +84,7 @@ void lectures4()
 	//int FirstNum, FirstNum2;
 	//두 수의 뺼셈 : 결과
 	//두 수의 곱셈 : 결과
-	printf("문제1\n");
+	printf("\n문제1\n");
 
 	int FirstNum1, FirstNum2;
 
@@ -104,7 +104,7 @@ void lectures4()
 
 	//문제2. 3개의 정수를 입력 받아서, SecondNum + SecondNum2 + SecondNum3을 출력하는 코드를 작성하세요.
 
-	printf("문제2\n");
+	printf("\n문제2\n");
 
 	int SecondNum1, SecondNum2, SecondNum3;
 
@@ -124,18 +124,31 @@ void lectures4()
 	//몫을 구하는 방식 : a/b(나눈 값에서 정수 부분이 몫)
 	//a%b = a를 b로 나눈 나머지 값
 
+	printf("\n문제3\n");
+
+	int  thirdNum1, thirdNum2;
+
+	printf("첫번째 정수를 입력해주세요 : ");
+	scanf_s("%d", &thirdNum1);
+	printf("두번째 정수를 입력해주세요 : ");
+	scanf_s("%d", &thirdNum2);
+
+	printf("%d / %d의 값은 : %d\n", thirdNum1, thirdNum2, thirdNum1 / thirdNum2);
+	printf("%d / %d의 나머지 값은 : %d\n", thirdNum1, thirdNum2, thirdNum1% thirdNum2);
+
 	//문제 4. 하나의 정수를 받아서 제곱을 출력하는 코드 작성
 
-	printf("문제4\n");
+	printf("\n문제4\n");
 
 	int fourthNum;
 
 	printf("정수를 입력해주세요 : ");
 	scanf_s("%d", &fourthNum);
+
 	printf("%d의 제곱값은 : %d\n", fourthNum, fourthNum * fourthNum);
 	//문제 5. 세 개의 정수를 입력을 받아서, {fifthNum1 - fifthNum2} * {fifthNum2 + fifthNum3} * {fifthNum2 * fifthNum1}이 결과를 코드롤 작성해보세요
 
-	printf("문제5\n");
+	printf("\n문제5\n");
 
 	int fifthNum1, fifthNum2, fifthNum3;
 
@@ -146,7 +159,7 @@ void lectures4()
 	printf("세번째 정수를 입력해주세요 : ");
 	scanf_s("%d", &fifthNum3);
 
-	printf("{%d - %d} * {%d + %d} * {%d * %d}의 값은 : %d", fifthNum1, fifthNum2, fifthNum2, fifthNum3, fifthNum2, fifthNum1);
+	printf("{%d} * {%d} * {%d}의 값은 : %d", (fifthNum1 -  fifthNum2), (fifthNum2 + fifthNum3), (fifthNum2 * fifthNum1), (fifthNum1 - fifthNum2) * (fifthNum2 + fifthNum3) * (fifthNum2* fifthNum1));
 
 
 }

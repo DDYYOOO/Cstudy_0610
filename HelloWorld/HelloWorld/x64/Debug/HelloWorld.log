@@ -1,0 +1,3 @@
+﻿  lecture4.c
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\HelloWorld\lecture4.c(75,6): warning C4101: 'Num' :참조되지 않은 지역 변수입니다.
+  HelloWorld.vcxproj -> C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\HelloWorld\x64\Debug\HelloWorld.exe
