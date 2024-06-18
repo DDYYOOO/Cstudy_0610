@@ -83,7 +83,7 @@ void lectures6()
 	printf("계산 결과(L-Value) = %d * %d + %d = %d\n", num1, num2, num3, num1 * num2 + num3);
 	printf("복합 대입 연산자(결과 %d += %d)\n", result, num1);
 
-	print("증가, 감소 연산자 예제 문제\n");
+	printf("증가, 감소 연산자 예제 문제\n");
 	int PlueA = 10;
 	int PlusB = (PlueA++) + 2;
 	printf("PlusB의 값은 얼마가 나올까요? : %d\n", PlusB);

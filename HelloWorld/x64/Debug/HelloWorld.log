@@ -1,2 +1,4 @@
-﻿lecture6.obj : error LNK2019: printlectures6 함수에서 참조되는 확인할 수 없는 외부 기호
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\HelloWorld.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+﻿  lecture7.c
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture7.c(70,8): warning C4305: '=': 'int'에서 'char'(으)로 잘립니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture7.c(35,25): warning C4305: '초기화 중': 'int'에서 'char'(으)로 잘립니다.
+  HelloWorld.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\HelloWorld.exe
