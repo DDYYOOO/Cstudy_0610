@@ -121,27 +121,29 @@ void lectures8()
 	int e = 0b0010010;
 	int my_int = 0b0000010;
 	int result = d & e;
-	printf("내가 계산한 값 : %dm, 실제 값 : %d\n",my_int, result);
+	printf("내가 계산한 값 : %d, 실제 값 : %d\n",my_int, result);
 
 	d = 0b0001111;
 	e = 0b0010010;
-	int my_int = 0b0011101;
-	int result = d | e;
-	printf("내가 계산한 값 : %dm, 실제 값 : %d\n", my_int, result);
+	my_int = 0b0011101;
+	result = d | e;
+	printf("내가 계산한 값 : %d, 실제 값 : %d\n", my_int, result);
 
-	int d = 0b0001111;
-	int e = 0b0010010;
-	int my_int = 0b00;
-	int result = d ^ e;
-	printf("내가 계산한 값 : %dm, 실제 값 : %d\n", my_int, result);
+	d = 0b0001111;
+	e = 0b0010010;
+	my_int = 0b0100000;
+	result = d ^ e;
+	printf("내가 계산한 값 : %d, 실제 값 : %d\n", my_int, result);
 
 	char overFlowedValue = 0b0100000;
-	overFlowedValue << 1; // 어떤 값이 나올까요?
+	overFlowedValue << 2; // 어떤 값이 나올까요?
 	// printf 출력
+	printf("%d",overFlowedValue);
 
-	char overFlowedValue = 0b0000100;
+	overFlowedValue = 0b0000100;
 	overFlowedValue << 5; // 어떤 값이 나올까요?
 	// printf 출력
+	printf("%d", overFlowedValue);
 
 	//10진수 하나 입력 받아서, 해당 수의 2의 보수 값을 출력하는 코드를 작성 (~)연산자 사용.
 	int twocComplement;
@@ -149,7 +151,7 @@ void lectures8()
 	// 시프트 연산
 	// 10진수 하나 입력 받아서, 해당 수에 8을 곱한 후 32로 나누는 코드를 x, /없이 작성.
 	// 8과 32가 반드시 코드에 들어가도록 하고 비트 연산자 (>> , <<) 사용.
-	int shiftNum;
+	int shiftNum = 0;
 
 	printf("a를 곱한후 12로 나눈 값 : %d", shiftNum);
 }
