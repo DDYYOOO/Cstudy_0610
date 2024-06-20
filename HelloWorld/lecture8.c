@@ -125,33 +125,55 @@ void lectures8()
 
 	d = 0b0001111;
 	e = 0b0010010;
-	my_int = 0b0011101;
+	my_int = 0b0011111;
 	result = d | e;
 	printf("내가 계산한 값 : %d, 실제 값 : %d\n", my_int, result);
 
 	d = 0b0001111;
 	e = 0b0010010;
-	my_int = 0b0100000;
+	my_int = 0b0011101;
 	result = d ^ e;
 	printf("내가 계산한 값 : %d, 실제 값 : %d\n", my_int, result);
 
-	char overFlowedValue = 0b0100000;
+	char overFlowedValue = 0b01000000;
+	//					   0b01000000; << 1
+	//					   0b10000000; -128
+	//					   0b01111111;
+	//					   0b10000000;
+	// 2의 보수 반전 + 1
+	// char 1바이트 크기 표현할 수 있는 수의 범위
+	// 1바이트 정수 표현할 수 있는 음수 범위, 양수 범위
+	// 양의 정수 범위 : 0b[0][000][0000] ~ 0b[0][111][1111] : 0, 1 ~ 127
+	// 음의 정수 범위 : 0b[1][000][0000] ~ 0b[1][111][1111] : -128 ~ -1
+	// -128 ~ 127 (-125 ~ 127) 256(2e8)
+
+	//0b01000000 << 2;
+	//overFlowedValue = 0b10000000; [0]
+	//					0b00000100 >> 8; [0]
+
 	overFlowedValue << 2; // 어떤 값이 나올까요?
 	// printf 출력
-	printf("%d",overFlowedValue);
+	printf("%d\n",overFlowedValue);
 
 	overFlowedValue = 0b0000100;
 	overFlowedValue << 5; // 어떤 값이 나올까요?
 	// printf 출력
-	printf("%d", overFlowedValue);
+	printf("%d\n", overFlowedValue);
 
 	//10진수 하나 입력 받아서, 해당 수의 2의 보수 값을 출력하는 코드를 작성 (~)연산자 사용.
 	int twocComplement;
-
+	scanf_s("%d", &twocComplement);
+	twocComplement = ~twocComplement + 1;
+	printf("2의 보수의 값을 출력 : %d\n", twocComplement);
 	// 시프트 연산
 	// 10진수 하나 입력 받아서, 해당 수에 8을 곱한 후 32로 나누는 코드를 x, /없이 작성.
 	// 8과 32가 반드시 코드에 들어가도록 하고 비트 연산자 (>> , <<) 사용.
-	int shiftNum = 0;
-
-	printf("a를 곱한후 12로 나눈 값 : %d", shiftNum);
+	char shiftNum = 64; // 4
+	//0b01000000;
+	//scanf_s("%d", &shiftNum);
+	//shiftNum <<= 3;
+	//shiftNum = shiftNum << 3 >> 5; // 8을 곱한 후 32로 나눈다 -> 4로 나눈다.
+	shiftNum = shiftNum << 3;
+	shiftNum = shiftNum >> 5;
+	printf("8를 곱한후 12로 나눈 값 : %d\n", shiftNum);
 }

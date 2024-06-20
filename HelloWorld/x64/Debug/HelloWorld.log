@@ -1,6 +1,35 @@
-﻿  lecture8.c
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture8.c(112,15): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture8.c(139,18): warning C4552: '<<': 식의 결과가 사용되지 않습니다.
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture8.c(144,18): warning C4552: '<<': 식의 결과가 사용되지 않습니다.
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture8.c(149,6): warning C4101: 'twocComplement' :참조되지 않은 지역 변수입니다.
+﻿  lecture9.c
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(64,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(64,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(66,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(66,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(68,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(68,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(70,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(70,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(72,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(72,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(74,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(74,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(76,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(76,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(77,7): warning C4215: 비표준 확장이 사용됨: long float입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(78,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture9.c(78,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
   HelloWorld.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\HelloWorld.exe
