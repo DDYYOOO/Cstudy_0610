@@ -17,7 +17,8 @@ int main()
 	int computerValue = rand() % 100 + 1; // 1 ~ 100의 랜덤한 숫자가 computerValue에 입력이 된다.
 	int userValue;
 	int startValue;
-	printf("어서오세요. 숫자를 입력하면 게임이 시작됩니다 : \n");
+	printf("어서오세요. 숫자를 입력하면 게임이 시작됩니다 : ");
+	scanf_s("%d", &startValue);
 	
 	printf("플레이어의 값을 입력하세요 : ");
 	scanf_s("%d", &userValue);
