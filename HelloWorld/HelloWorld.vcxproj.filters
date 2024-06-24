@@ -69,7 +69,7 @@
     <ClCompile Include="lecture10.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main.c">
+    <ClCompile Include="lecture11.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

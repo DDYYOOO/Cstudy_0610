@@ -138,6 +138,7 @@
     </ClCompile>
     <ClCompile Include="lecture10.c" />
     <ClCompile Include="lecture1.c" />
+    <ClCompile Include="lecture11.c" />
     <ClCompile Include="lecture2.c" />
     <ClCompile Include="lecture3.c" />
     <ClCompile Include="lecture4.c" />
@@ -146,7 +147,6 @@
     <ClCompile Include="lecture7.c" />
     <ClCompile Include="lecture8.c" />
     <ClCompile Include="lecture9.c" />
-    <ClCompile Include="main.c" />
     <ClCompile Include="new game.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

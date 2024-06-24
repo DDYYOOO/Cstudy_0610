@@ -19,16 +19,59 @@ int main()
 	int startValue;
 	printf("어서오세요. 숫자를 입력하면 게임이 시작됩니다 : ");
 	scanf_s("%d", &startValue);
-	
+
 	printf("플레이어의 값을 입력하세요 : ");
 	scanf_s("%d", &userValue);
 	printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
 	printf("플레이어의 입력 값 : %d\n", userValue);
 
-	if (computerValue == userValue)
-		printf("축하합니다.\n");
+	if (computerValue != userValue)
+	{
+		printf("틀렸습니다. 3번 남았습니다. 다시 입력하세요 :");
+		scanf_s("%d", &userValue);
+		printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
+		printf("플레이어의 입력 값 : %d\n", userValue);
+
+
+		if (computerValue != userValue)
+		{
+			printf("틀렸습니다. 2번 남았습니다. 다시 입력하세요 :");
+			scanf_s("%d", &userValue);
+			printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
+			printf("플레이어의 입력 값 : %d\n", userValue);
+
+			if (computerValue != userValue)
+			{
+				printf("틀렸습니다. 1번 남았습니다. 다시 입력하세요 :");
+				scanf_s("%d", &userValue);
+				printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
+				printf("플레이어의 입력 값 : %d\n", userValue);
+				
+				if (computerValue != userValue)
+				{
+					printf("틀렸습니다. 게임에서 패배했습니다\n");
+				}
+				else
+				{
+					printf("축하합니다. 게임에서 이겼습니다.\n");
+				}
+			}
+			else
+			{
+				printf("축하합니다. 게임에서 이겼습니다.\n");
+			}
+		}
+		else
+		{
+			printf("축하합니다. 게임에서 이겼습니다.\n");
+		}
+	}
 	else
-		printf("틀렸습니다.\n");
+	{
+		printf("축하합니다. 게임에서 이겼습니다.\n");
+	}
+
+
 
 	return 0;
 }
