@@ -72,6 +72,12 @@
     <ClCompile Include="lecture11.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="lecture12.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture12_3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lectures.h">

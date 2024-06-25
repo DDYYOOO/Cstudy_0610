@@ -11,3 +11,15 @@ void lectures8();
 void lectures9();
 void lectures10();
 void lectures11();
+/// <summary>
+/// 강의 12. 반복문
+/// </summary>
+void lectures12();
+/// <summary>
+/// for 반복문 예제 문제
+/// </summary>
+void lectures12_2();
+/// <summary>
+/// while 반복문
+/// </summary>
+void lectures12_3();
