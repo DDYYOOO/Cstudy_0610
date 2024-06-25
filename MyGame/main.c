@@ -24,54 +24,126 @@ int main()
 	scanf_s("%d", &userValue);
 	printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
 	printf("플레이어의 입력 값 : %d\n", userValue);
-
-	if (computerValue != userValue)
+	
+	if (computerValue > userValue)
 	{
-		printf("틀렸습니다. 3번 남았습니다. 다시 입력하세요 :");
-		scanf_s("%d", &userValue);
-		printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
-		printf("플레이어의 입력 값 : %d\n", userValue);
+		printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 큽니다\n", computerValue, userValue);
+	}
+	else
+	{
+		printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
+	}
 
+	// if문을 이용한 랜덤한 숫자 맞추기 게임
 
+	//if (computerValue != userValue)
+	//{
+	//	printf("틀렸습니다. 3번 남았습니다. 다시 입력하세요 :");
+	//	scanf_s("%d", &userValue);
+	//	printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
+	//	printf("플레이어의 입력 값 : %d\n", userValue);
+	//
+	//
+	//	if (computerValue != userValue)
+	//	{
+	//		printf("틀렸습니다. 2번 남았습니다. 다시 입력하세요 :");
+	//		scanf_s("%d", &userValue);
+	//		printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
+	//		printf("플레이어의 입력 값 : %d\n", userValue);
+	//
+	//		if (computerValue != userValue)
+	//		{
+	//			printf("틀렸습니다. 1번 남았습니다. 다시 입력하세요 :");
+	//			scanf_s("%d", &userValue);
+	//			printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
+	//			printf("플레이어의 입력 값 : %d\n", userValue);
+	//			
+	//			if (computerValue != userValue)
+	//			{
+	//				printf("틀렸습니다. 게임에서 패배했습니다\n");
+	//			}
+	//			else
+	//			{
+	//				printf("축하합니다. 게임에서 이겼습니다.\n");
+	//			}
+	//		}
+	//		else
+	//		{
+	//			printf("축하합니다. 게임에서 이겼습니다.\n");
+	//		}
+	//	}
+	//	else
+	//	{
+	//		printf("축하합니다. 게임에서 이겼습니다.\n");
+	//	}
+	//}
+	//else
+	//{
+	//	printf("축하합니다. 게임에서 이겼습니다.\n");
+	//}
+
+	// for문을 이용한 랜덤한 숫자 맞추기 게임
+
+	for (int i = 5; i > 0; i--)
+	{
 		if (computerValue != userValue)
 		{
-			printf("틀렸습니다. 2번 남았습니다. 다시 입력하세요 :");
+			srand(time(NULL));
+			computerValue = rand() % 100 + 1;
+			printf("\n틀렸습니다. %d번 남았습니다.\n다시 입력하세요 :", i);
 			scanf_s("%d", &userValue);
 			printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
 			printf("플레이어의 입력 값 : %d\n", userValue);
-
-			if (computerValue != userValue)
+			
+			if (computerValue > userValue)
 			{
-				printf("틀렸습니다. 1번 남았습니다. 다시 입력하세요 :");
-				scanf_s("%d", &userValue);
-				printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
-				printf("플레이어의 입력 값 : %d\n", userValue);
-				
-				if (computerValue != userValue)
-				{
-					printf("틀렸습니다. 게임에서 패배했습니다\n");
-				}
-				else
-				{
-					printf("축하합니다. 게임에서 이겼습니다.\n");
-				}
+				printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 큽니다\n", computerValue, userValue);
 			}
 			else
 			{
-				printf("축하합니다. 게임에서 이겼습니다.\n");
+				printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
 			}
+	
 		}
 		else
 		{
 			printf("축하합니다. 게임에서 이겼습니다.\n");
 		}
+	
 	}
-	else
-	{
-		printf("축하합니다. 게임에서 이겼습니다.\n");
-	}
+	printf("틀렸습니다. 게임에서 패배했습니다\n");
 
+	// while문을 이용한 랜덤한 숫자 맞추기 게임
 
+	//int countNum = 5;
+	//while (countNum > 1)
+	//{
+	//	countNum--;
+	//	if (computerValue != userValue)
+	//	{
+	//		srand(time(NULL));
+	//		computerValue = rand() % 100 + 1;
+	//		printf("틀렸습니다. %d번 남았습니다. 다시 입력하세요 :", countNum);
+	//		scanf_s("%d", &userValue);
+	//		printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
+	//		printf("플레이어의 입력 값 : %d\n", userValue);
+	//		
+	//		if (computerValue > userValue)
+	//		{
+	//			printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 큽니다\n", computerValue, userValue);
+	//		}
+	//		else
+	//		{
+	//			printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
+	//		}
+	//
+	//	}
+	//	else
+	//	{
+	//		printf("축하합니다. 게임에서 이겼습니다.\n");
+	//	}
+	//}
+	//printf("틀렸습니다. 게임에서 패배했습니다\n");
 
 	return 0;
 }
