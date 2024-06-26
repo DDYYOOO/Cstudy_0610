@@ -23,3 +23,5 @@ void lectures12_2();
 /// while ¹Ýº¹¹®
 /// </summary>
 void lectures12_3();
+void lectures13();
+void lectures13_switch();

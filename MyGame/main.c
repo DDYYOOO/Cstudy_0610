@@ -84,17 +84,26 @@ int main()
 
 	// for문을 이용한 랜덤한 숫자 맞추기 게임
 
-	for (int i = 5; i > 0; i--)
+	int counter = 0;
+	int life = 5;
+
+	for (; ;)
 	{
+		counter++;
+
 		if (computerValue != userValue)
 		{
-			srand(time(NULL));
-			computerValue = rand() % 100 + 1;
-			printf("\n틀렸습니다. %d번 남았습니다.\n다시 입력하세요 :", i);
+			printf("\n틀렸습니다. %d번 남았습니다.\n다시 입력하세요 :", life - counter);
 			scanf_s("%d", &userValue);
 			printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
 			printf("플레이어의 입력 값 : %d\n", userValue);
-			
+
+			if (counter >= life) 
+			{
+				printf("기회를 모두 사용했습니다. 게임에서 패배했습니다\n");
+				break;
+			}
+
 			if (computerValue > userValue)
 			{
 				printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 큽니다\n", computerValue, userValue);
@@ -103,15 +112,14 @@ int main()
 			{
 				printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
 			}
-	
 		}
 		else
 		{
 			printf("축하합니다. 게임에서 이겼습니다.\n");
+			break;
 		}
-	
 	}
-	printf("틀렸습니다. 게임에서 패배했습니다\n");
+	//printf("기회를 모두 사용했습니다. 게임에서 패배했습니다\n");
 
 	// while문을 이용한 랜덤한 숫자 맞추기 게임
 
@@ -121,8 +129,6 @@ int main()
 	//	countNum--;
 	//	if (computerValue != userValue)
 	//	{
-	//		srand(time(NULL));
-	//		computerValue = rand() % 100 + 1;
 	//		printf("틀렸습니다. %d번 남았습니다. 다시 입력하세요 :", countNum);
 	//		scanf_s("%d", &userValue);
 	//		printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
@@ -141,6 +147,7 @@ int main()
 	//	else
 	//	{
 	//		printf("축하합니다. 게임에서 이겼습니다.\n");
+	//		break;
 	//	}
 	//}
 	//printf("틀렸습니다. 게임에서 패배했습니다\n");

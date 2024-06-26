@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-int main(void)
+int Main(void)
 {
 	int num = 500;
 
