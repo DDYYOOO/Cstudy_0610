@@ -16,10 +16,12 @@ int main()
 	srand(time(NULL));
 	int computerValue = rand() % 100 + 1; // 1 ~ 100의 랜덤한 숫자가 computerValue에 입력이 된다.
 	int userValue;
-	int startValue;
+	//int startValue;
 	int playerHP = 5;
-	printf("어서오세요. 숫자를 입력하면 게임이 시작됩니다 : ");
-	scanf_s("%d", &startValue);
+	//printf("어서오세요. 숫자를 입력하면 게임이 시작됩니다 : ");
+	//scanf_s("%d", &startValue);
+
+	printf("게임 시작!\n");
 
 	printf("플레이어의 값을 입력하세요 : ");
 	scanf_s("%d", &userValue);
@@ -51,6 +53,15 @@ int main()
 				printf("게임 종료\n");
 				break;
 			}
+			// 함수화 2 : 플레이어의 체력을 감소 시키고 숫자를 다시 맞출 기회를 주는 코드를 함수화 
+
+			// 플레이어의 체력을 감소시킨다.
+			playerHP--;
+
+			// 다시 플레이어의 맟출 기회를 줌
+			printf("플레이어의 값을 입력하세요 : ");
+			scanf_s("%d", &userValue);
+
 		}
 	}
 

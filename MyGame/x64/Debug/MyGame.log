@@ -1,3 +1,7 @@
-﻿  main.c
-C:\Users\Administrator\Desktop\Cstudy_0610\MyGame\main.c(16,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  MyGame.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\MyGame.exe
+﻿  CountNumFunc.c
+  main.c
+  코드를 생성하고 있습니다...
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MyGame\main.c(16,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MyGame\main.c(45,4): warning C4013: 'GameWin'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MyGame\CountNumFunc.c(20,1): warning C4716: 'Fail': 값을 반환해야 합니다.
+  MyGame.vcxproj -> C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\HelloWorld\x64\Debug\MyGame.exe
