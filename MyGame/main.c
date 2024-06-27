@@ -17,6 +17,7 @@ int main()
 	int computerValue = rand() % 100 + 1; // 1 ~ 100의 랜덤한 숫자가 computerValue에 입력이 된다.
 	int userValue;
 	int startValue;
+	int playerHP = 5;
 	printf("어서오세요. 숫자를 입력하면 게임이 시작됩니다 : ");
 	scanf_s("%d", &startValue);
 
@@ -33,6 +34,26 @@ int main()
 	{
 		printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
 	}
+
+	while (1)
+	{
+		if (computerValue == userValue)
+		{
+			// 함수화 1 : GameWin게임에서 승리를 구현하는 함수 구현
+			GameWin();
+			break;
+		}
+		else
+		{
+			// 만약 플레이어의 현재 체력이 0보다 작거나 같으면 게임을 종료
+			if (playerHP <= 0)
+			{
+				printf("게임 종료\n");
+				break;
+			}
+		}
+	}
+
 
 	// if문을 이용한 랜덤한 숫자 맞추기 게임
 
@@ -84,44 +105,44 @@ int main()
 
 	// for문을 이용한 랜덤한 숫자 맞추기 게임
 
-	int counter = 0;
-	int life = 5;
-
-	for (; ;)
-	{
-		counter++;
-
-		if (computerValue != userValue)
-		{
-			printf("\n틀렸습니다. %d번 남았습니다.\n다시 입력하세요 :", life - counter);
-			scanf_s("%d", &userValue);
-			printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
-			printf("플레이어의 입력 값 : %d\n", userValue);
-
-			if (counter >= life) 
-			{
-				printf("기회를 모두 사용했습니다. 게임에서 패배했습니다\n");
-				break;
-			}
-
-			if (computerValue > userValue)
-			{
-				printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 큽니다\n", computerValue, userValue);
-			}
-			else
-			{
-				printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
-			}
-		}
-		else
-		{
-			printf("축하합니다. 게임에서 이겼습니다.\n");
-			break;
-		}
-	}
+	//int counter = 0;
+	//int life = 5;
+	
+	//for (; ;)
+	//{
+	//	life--;
+	//
+	//	if (computerValue != userValue)
+	//	{
+	//		printf("\n틀렸습니다. %d번 남았습니다.\n다시 입력하세요 :", life);
+	//		scanf_s("%d", &userValue);
+	//		printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
+	//		printf("플레이어의 입력 값 : %d\n", userValue);
+	//
+	//		if (life == 1) 
+	//		{
+	//			printf("기회를 모두 사용했습니다. 게임에서 패배했습니다\n");
+	//			break;
+	//		}
+	//
+	//		if (computerValue > userValue)
+	//		{
+	//			printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 큽니다\n", computerValue, userValue);
+	//		}
+	//		else
+	//		{
+	//			printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
+	//		}
+	//	}
+	//	else
+	//	{
+	//		printf("축하합니다. 게임에서 이겼습니다.\n");
+	//		break;
+	//	}
+	//}
 	//printf("기회를 모두 사용했습니다. 게임에서 패배했습니다\n");
 
-	// while문을 이용한 랜덤한 숫자 맞추기 게임
+	 //while문을 이용한 랜덤한 숫자 맞추기 게임
 
 	//int countNum = 5;
 	//while (countNum > 1)
@@ -151,6 +172,5 @@ int main()
 	//	}
 	//}
 	//printf("틀렸습니다. 게임에서 패배했습니다\n");
-
 	return 0;
 }
