@@ -2,6 +2,11 @@
 #include<stdlib.h>
 #include<time.h>
 
+int InputNumber();			// 함수를 미리 선언해두는 방식
+							// 컴파일러는 코드르 위에서부터 읽기 때문에, 미리 선언되어 있지 않은 함수를 호출할 수 없다
+							// C언어에서는 이 함수를 나중에 사용한다
+
+
 int main()
 {
 	// printf함수와 scanf함수를 시용해서 게임의 느낌을 만듦
@@ -9,36 +14,42 @@ int main()
 	// printf(숫자를 입력하면 게임이 시작합니다)
 	// scanf -> 입력을 받는다  커서가 멈춘상태로 대기하고 있다
 
-	//정수 또는 실수 데이터를 만들어서 컴퓨터가 생각하는 결과를 출력하고, 내가 생각하는 결과를 같이 출력하는 프로그램을 만들어 보세요
+	// 정수 또는 실수 데이터를 만들어서 컴퓨터가 생각하는 결과를 출력하고, 내가 생각하는 결과를 같이 출력하는 프로그램을 만들어 보세요
 
-	printf("☆★게임 시작★☆\n");
+
+	// 0 ~ 15에 해당되는 색상을 이용해서 콘솔창 꾸며보기
+	SetColor(0 , 15);
+
+	//system("cls");
+	
+	StartGameSetting();
 
 	srand(time(NULL));
 	int computerValue = rand() % 100 + 1; // 1 ~ 100의 랜덤한 숫자가 computerValue에 입력이 된다.
 	int userValue;
-	//int startValue;
-	int playerHP = 5;
-	//printf("어서오세요. 숫자를 입력하면 게임이 시작됩니다 : ");
-	//scanf_s("%d", &startValue);
+	int playerHP; // 지역 변수로 사용되면 그 값이 사라지기때문에 함수의 리턴과 동시에 변수에 할당
+
+	playerHP = SetPlayerHP();
 
 	printf("게임 시작!\n");
 
 	printf("플레이어의 값을 입력하세요 : ");
-	scanf_s("%d", &userValue);
+	userValue = InputNumber();
 	printf("컴퓨터의 랜덤한 값 : %d\n", computerValue);
 	printf("플레이어의 입력 값 : %d\n", userValue);
 	
-	if (computerValue > userValue)
-	{
-		printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 큽니다\n", computerValue, userValue);
-	}
-	else
-	{
-		printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
-	}
 
 	while (1)
 	{
+		if (computerValue > userValue)
+		{
+			printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 큽니다\n", computerValue, userValue);
+		}
+		else
+		{
+			printf("컴퓨터의 랜덤한 값 : %d가 플레이어의 입력 값 : %d보다 작습니다\n", computerValue, userValue);
+		}
+
 		if (computerValue == userValue)
 		{
 			// 함수화 1 : GameWin게임에서 승리를 구현하는 함수 구현
@@ -56,12 +67,11 @@ int main()
 			// 함수화 2 : 플레이어의 체력을 감소 시키고 숫자를 다시 맞출 기회를 주는 코드를 함수화 
 
 			// 플레이어의 체력을 감소시킨다.
-			playerHP--;
+			Fail();
 
 			// 다시 플레이어의 맟출 기회를 줌
 			printf("플레이어의 값을 입력하세요 : ");
-			scanf_s("%d", &userValue);
-
+			userValue = InputNumber();
 		}
 	}
 

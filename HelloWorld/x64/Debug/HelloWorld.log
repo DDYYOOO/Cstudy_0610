@@ -1,6 +1,5 @@
-﻿  lecture14.c
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture14.c(33,2): warning C4013: 'printf'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture14.c(56,2): warning C4013: 'scanf_s'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture14.c(84,21): warning C4013: 'Compare'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture14.c(84,29): warning C4013: 'AbsoluteNum'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-  HelloWorld.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\HelloWorld.exe
+﻿  lecture15.c
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture15.c(60,13): error C2086: 'int static_num': 재정의
+  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture15.c(44,13):
+  'static_num' 선언을 참조하십시오.
+  
