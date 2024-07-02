@@ -1,5 +1,12 @@
-﻿  lecture15.c
-C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture15.c(60,13): error C2086: 'int static_num': 재정의
-  C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture15.c(44,13):
-  'static_num' 선언을 참조하십시오.
-  
+﻿  lecture16.c
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,38): warning C4101: 'a9' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,14): warning C4101: 'a3' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,10): warning C4101: 'a2' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,6): warning C4101: 'a1' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,22): warning C4101: 'a5' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,42): warning C4101: 'a10' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,26): warning C4101: 'a6' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,18): warning C4101: 'a4' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,34): warning C4101: 'a8' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\lecture16.c(22,30): warning C4101: 'a7' :참조되지 않은 지역 변수입니다.
+  HelloWorld.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\HelloWorld.exe

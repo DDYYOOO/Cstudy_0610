@@ -57,7 +57,7 @@ void lectures15()
 	printf("count1의 값 : %d, count2의 값 : %d\n", count1, count2);
 
 
-	static int static_num; // lectures15 함수 내에서만 스태틱 지연 변수 선언
+	//static int static_num; // lectures15 함수 내에서만 스태틱 지연 변수 선언
 
 	printf("static_num 의 값 : %d\n", static_num);
 }
