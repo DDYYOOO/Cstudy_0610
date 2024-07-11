@@ -28,3 +28,5 @@ void lectures13_switch();
 void lectures14();
 void lectures15();
 void lectures16();
+//GamePrograming 2
+void lectures17();

@@ -28,6 +28,11 @@ int main(void)
 	//lectures13_switch();
 	//lectures14();
 	//lectures15();
-	lectures16();
+	//lectures16();
+	lectures17();
+
+
+
+
 	return 0;
 }

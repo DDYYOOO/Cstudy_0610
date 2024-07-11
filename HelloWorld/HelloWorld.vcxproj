@@ -146,6 +146,7 @@
     <ClCompile Include="lecture14.c" />
     <ClCompile Include="lecture15.c" />
     <ClCompile Include="lecture16.c" />
+    <ClCompile Include="lecture17.c" />
     <ClCompile Include="lecture2.c" />
     <ClCompile Include="lecture3.c" />
     <ClCompile Include="lecture4.c" />
@@ -154,9 +155,6 @@
     <ClCompile Include="lecture7.c" />
     <ClCompile Include="lecture8.c" />
     <ClCompile Include="lecture9.c" />
-    <ClCompile Include="new game.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="메인.c" />
     <ClCompile Include="변수.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
