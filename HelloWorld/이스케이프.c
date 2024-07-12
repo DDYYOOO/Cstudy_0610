@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-int main(void)
+int Main(void)
 {
 	int num = 500;
 	printf("지금 보유한 금액 : 450원 \n");

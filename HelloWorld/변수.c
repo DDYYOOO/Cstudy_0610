@@ -29,7 +29,7 @@
 
 #include<stdio.h>
 
-int main()
+int Main()
 {
 	int a = 5 + 3;
 

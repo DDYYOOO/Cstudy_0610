@@ -5,7 +5,7 @@
 //scanf_S("%d", &num);
 #include<stdio.h>
 
-int main(void)
+int Main(void)
 {
 	int num;
 	//scanf_s함수 사용

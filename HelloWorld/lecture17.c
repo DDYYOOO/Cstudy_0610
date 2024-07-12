@@ -110,11 +110,11 @@ void lectures17()
 	temp = e_num1Ptr;
 	e_num1Ptr = e_num2Ptr;
 	e_num2Ptr = temp;
-
 	printf("%d %d\n", *e_num1Ptr, *e_num2Ptr); // 변경한 값 출력
 
 	// 복습
-	int exam_num1 = 50, exam_num2 = 30, temp_num;
+	int exam_num1 = 50, exam_num2 = 30;
+	int* temp_num = NULL;
 	int* exam_num1Ptr = &exam_num1;
 	int* exam_num2Ptr = &exam_num2;
 	printf("%d %d\n", *exam_num1Ptr, *exam_num2Ptr);
