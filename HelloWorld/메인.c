@@ -30,7 +30,8 @@ int main(void)
 	//lectures15();
 	//lectures16();
 	//lectures17();
-	lectures18();
+	//lectures18();
+	lectures19();
 
 
 
