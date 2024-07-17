@@ -87,7 +87,7 @@ void DoublePointerCallByRef(int** ref)
 
 void DecimalToBinaray(int num)
 {
-	int binaray[20] = {0};
+	int binaray[20] = {0};		
 	int pos = 0;
 
 	while (1)

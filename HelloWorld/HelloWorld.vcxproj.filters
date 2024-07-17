@@ -13,8 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\강의">
+    <Filter Include="소스 파일\gameprograming1">
       <UniqueIdentifier>{d03fa22a-33a0-496a-a8fe-d31553dd6f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\gameprograming2">
+      <UniqueIdentifier>{7027668a-18d7-4f43-9a57-d2eee95d06d2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -22,88 +25,91 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="lecture1.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture2.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture3.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture4.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture6.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture5.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture7.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture8.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture10.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture9.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture11.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture12.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture12_3.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture13.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture13_switch.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="4강_이스케이프.cpp">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="컴파일러.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="이스케이프.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="변수.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="hello.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="4강_입력.cpp">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture14.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture15.c">
-      <Filter>소스 파일\강의</Filter>
-    </ClCompile>
-    <ClCompile Include="lecture18.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="lecture19.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture16.c">
-      <Filter>소스 파일\강의</Filter>
-    </ClCompile>
-    <ClCompile Include="lecture17.c">
-      <Filter>소스 파일\강의</Filter>
+      <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
     <ClCompile Include="lecture20.c">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture21.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture19.c">
+      <Filter>소스 파일\gameprograming2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture18.c">
+      <Filter>소스 파일\gameprograming2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture17.c">
+      <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

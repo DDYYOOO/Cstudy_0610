@@ -1,5 +1,8 @@
 #include<stdio.h>
+#include<stdlib.h>
 
+
+//GamePrograming 1
 void lectures1();
 void lectures2();
 void lectures3();
@@ -33,3 +36,4 @@ void lectures17();
 void lectures18();
 void lectures19();
 void lectures20();
+void lectures21();
