@@ -96,12 +96,6 @@
     <ClCompile Include="lecture16.c">
       <Filter>소스 파일\gameprograming1</Filter>
     </ClCompile>
-    <ClCompile Include="lecture20.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="lecture21.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="lecture19.c">
       <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
@@ -109,6 +103,15 @@
       <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
     <ClCompile Include="lecture17.c">
+      <Filter>소스 파일\gameprograming2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture22.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture20.c">
+      <Filter>소스 파일\gameprograming2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture21.c">
       <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
   </ItemGroup>
