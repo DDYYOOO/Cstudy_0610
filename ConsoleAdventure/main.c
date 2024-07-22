@@ -11,7 +11,7 @@ char mapString[(COLS * (ROWS + 1)) + 1];  // 데이터로부터 출력하는 문자열
 // (COLS + ROWS) : 
 
 
-void MakeMap(char Wall, char(*map)[ROWS])
+void MakeMap(char Wall, char(*map)[ROWS]) // 2차원 배열 맵에 존재하는 데이터 설정
 {
 	for (int i = 0; i < 29; i++)
 	{
@@ -21,20 +21,44 @@ void MakeMap(char Wall, char(*map)[ROWS])
 		}
 	}
 
-	int mapIndex = 0;
-
 	for (int i = 0; i < COLS; i++)
 	{
-		map[i][0] = '#';
-		map[i][COLS - 1] = '#';
+		map[i][0] = Wall;
+		map[i][COLS - 1] = Wall;
 	}
 
 	for (int j = 0; j < ROWS; j++)
 	{
-		map[0][j] = '#';
-		map[ROWS - 1][j] = '#';
+		map[0][j] = Wall;
+		map[ROWS - 1][j] = Wall;
 	}
 
+	for (int i = ROWS - 20; i >= ROWS - 24; i--)
+	{
+		map[ROWS - 20][i] = Wall;
+	}
+
+	for (int i = COLS - 20; i >= COLS - 25; i--)
+	{
+		map[i][COLS - 20] = Wall;
+	}
+}
+
+void InWall(char Wall, char(*map)[ROWS])
+{
+	for (int i = ROWS - 20; i >= ROWS - 25; i--)
+	{
+		for (int j = COLS - 20; j >= COLS - 25; j--)
+		{
+			map[ROWS - 20][i] = Wall;
+			map[i][COLS - 20] = Wall;
+		}
+	}
+}
+
+void RenderMap()
+{
+	int mapIndex = 0;
 
 	for (int i = 0; i < COLS; i++)
 	{
@@ -46,6 +70,7 @@ void MakeMap(char Wall, char(*map)[ROWS])
 		mapString[mapIndex++] = '\n';
 	}
 	mapString[mapIndex] = '\0';
+
 }
 
 void InputProcess(int* x, int* y)
@@ -100,7 +125,7 @@ void GameInfo() // 게임의 정보를 출력하는 함수를 총괄
 
 int main()
 {
-#if true	
+#if false	
 	for (int i = 0; i < 29; i++)
 	{
 		for (int j = 0; j < 29; j++)
@@ -123,13 +148,6 @@ int main()
 		map[ROWS - 1][j] = '#';
 	}
 
-	//for (int i = COLS - 20; i < COLS - 15; i++)
-	//{
-	//	i = '';
-	//	printf("%c", );
-	//}
-
-
 	for (int i = 0; i < COLS; i++)
 	{
 		for (int j = 0; j < ROWS; j++)
@@ -148,11 +166,21 @@ int main()
 
 	int playerX = 15, playerY = 15;		// 플레이어의 시작 좌표
 	bool itemFound = false;	// 아이템을 발견하면 true 만들어 준다	
+	bool canMove = true; // canMove가 true일 때 움직여라
 	
 	int itemX = 8, itemY = 8;
 
 	// 게임 맵 생성
-	//MakeMap();
+
+	// 게임 외벽 설정
+	MakeMap('#', map);
+
+	// 내벽 데이터 
+	InWall('#', map);
+
+	RenderMap();
+
+
 
 
 	while (1)
@@ -173,6 +201,16 @@ int main()
 		{
 			GoToTargetPos(1, 31, "아이템을 획득했습니다");
 		}
+
+		if (!canMove)
+		{
+			
+		}
+		else
+		{
+
+		}
+
 
 #if false
 		for (int i = 0; i < 30; i++)
