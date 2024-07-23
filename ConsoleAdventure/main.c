@@ -202,7 +202,7 @@ int main()
 			GoToTargetPos(1, 31, "æ∆¿Ã≈€¿ª »πµÊ«ﬂΩ¿¥œ¥Ÿ");
 		}
 
-		if (!canMove)
+		if (canMove)
 		{
 			
 		}
