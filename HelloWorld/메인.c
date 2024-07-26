@@ -36,6 +36,7 @@ int main(void)
 	//lectures21();
 	//lectures22();
 	//lectures23();
-	lectures24();
+	//lectures24();
+	lectures25();
 	return 0;
 }
