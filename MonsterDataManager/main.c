@@ -13,6 +13,7 @@ int main()
 	int playerInput = 0;
 	Monster monsterGroup[100];
 
+
 	char monster_name[100][30];
 	char monster_region[100][30];
 	char monster_grade[100][30];
@@ -22,7 +23,7 @@ int main()
 	
 	while (1)
 	{
-		system("cls");
+		//system("cls");
 		printf("1.몬스터 데이터 추가\n");
 		printf("2.몬스터 데이터 보기\n");
 		printf("3.몬스터 데이터 삭제\n");
@@ -33,15 +34,16 @@ int main()
 		// 1. 몬스터 데이터 추가
 		if (playerInput == 1)
 		{
-			//AddMosnterInfo();
+			AddMosnterInfo(monsterGroup, &totalMonsterCount);
+			
 			printf("프로그램 종료\n");
-			break;
+			continue;
 		}
 		// 2. 몬스터 데이터 보기
 		if (playerInput == 2)
 		{
 			printf("프로그램 종료\n");
-			break;
+			continue;
 		}
 		// 3. 몬스터 데이터 삭제
 		if (playerInput == 3)
@@ -56,9 +58,6 @@ int main()
 			break;
 		}
 	}
-
-
-
 
 	return 0;
 

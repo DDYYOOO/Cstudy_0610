@@ -53,6 +53,6 @@ void AddMosnterInfo(Monster(*monster)[100], int* monsterIndexPtr)
 void ShowMonsterInfo(Monster monster)
 {
 	printf("몬스터의 이름 : %s\n", monster.name);
-	printf("몬스터의 서식지 : %s\n", monster.region);
+	printf("몬스터의 지역 : %s\n", monster.region);
 	printf("몬스터의 등급 : %s\n", monster.grade);
 }

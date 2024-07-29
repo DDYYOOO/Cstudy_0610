@@ -1,4 +1,13 @@
-﻿  구조체 예제.c
-C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\구조체 예제.c(111,20): warning C4047: '함수': 'Monster (*)[100]'의 간접 참조 수준이 'Monster [100]'과(와) 다릅니다.
-C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\구조체 예제.c(111,20): warning C4024: 'ChangeMosnterInfo': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-  MonsterDataManager.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\MonsterDataManager.exe
+﻿  Function.c
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\Function.c(25,2): warning C4013: 'printf'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\Function.c(26,2): warning C4013: 'scanf_s'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\Function.c(46,2): warning C4013: 'strcpy_s'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  main.c
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\main.c(37,19): warning C4047: '함수': 'Monster (*)[100]'의 간접 참조 수준이 'Monster [100]'과(와) 다릅니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\main.c(37,19): warning C4024: 'AddMosnterInfo': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\main.c(17,7): warning C4101: 'monster_name' :참조되지 않은 지역 변수입니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\main.c(20,6): warning C4101: 'monster_level' :참조되지 않은 지역 변수입니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\main.c(19,7): warning C4101: 'monster_grade' :참조되지 않은 지역 변수입니다.
+C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\MonsterDataManager\main.c(18,7): warning C4101: 'monster_region' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다...
+  MonsterDataManager.vcxproj -> C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\HelloWorld\x64\Debug\MonsterDataManager.exe
