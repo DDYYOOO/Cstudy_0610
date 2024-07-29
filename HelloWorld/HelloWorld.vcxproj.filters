@@ -105,23 +105,23 @@
     <ClCompile Include="lecture17.c">
       <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
-    <ClCompile Include="lecture22.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="lecture20.c">
       <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
     <ClCompile Include="lecture21.c">
       <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
-    <ClCompile Include="lecture23.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="lecture24.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="lecture25.c">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture22.c">
+      <Filter>소스 파일\gameprograming2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture23.c">
+      <Filter>소스 파일\gameprograming2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture24.c">
+      <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
