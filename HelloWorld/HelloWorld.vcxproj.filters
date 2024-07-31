@@ -123,6 +123,9 @@
     <ClCompile Include="lecture24.c">
       <Filter>소스 파일\gameprograming2</Filter>
     </ClCompile>
+    <ClCompile Include="lecture26.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lectures.h">
