@@ -1,7 +1,9 @@
-﻿  Function.c
-  main.c
-C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\main.c(63,4): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-  구조체 예제.c
-  코드를 생성하고 있습니다...
-C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\구조체 예제.c(54): warning C4716: 'Main': 값을 반환해야 합니다.
+﻿  main.c
+C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\main.c(72,17): warning C4477: 'fprintf_s' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int'입니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\main.c(72,17): warning C4313: 'fprintf_s': 서식 문자열의 '%s'이(가) int' 형식의 인수 2과(와) 충돌합니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\main.c(72,87): warning C4474: 'fprintf_s' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\main.c(72,87):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 3개 필요하지만 6개가 제공되었습니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\MonsterDataManager\main.c(128,4): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
   MonsterDataManager.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\MonsterDataManager.exe
