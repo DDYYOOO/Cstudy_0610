@@ -3,17 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\HelloWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9C2AC86-95F9-4065-A2E9-77DE7A4BD837}|..\\MonsterDataManager\\MonsterDataManager.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{623AEC41-BAFD-427A-B543-AB317689E5A2}|..\\ToyProject01\\ToyProject01.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9C2AC86-95F9-4065-A2E9-77DE7A4BD837}|..\\MonsterDataManager\\MonsterDataManager.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\Function.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4B5A8E1-91B0-4EF1-8739-589939277C40}|..\\ConsoleAdventure\\ConsoleAdventure.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ConsoleAdventure\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C1198AC-D894-4606-B15F-7A053364E986}|HelloWorld.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\HelloWorld\\lecture25.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0C1198AC-D894-4606-B15F-7A053364E986}|HelloWorld.vcxproj|solutionrelative:lecture25.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{623AEC41-BAFD-427A-B543-AB317689E5A2}|..\\ToyProject01\\ToyProject01.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\ConsoleFunc.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9C2AC86-95F9-4065-A2E9-77DE7A4BD837}|..\\MonsterDataManager\\MonsterDataManager.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{18E10CAA-90C1-490C-9EBF-1245FD8FD284}|..\\Avoid_Star\\Avoid_Star.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\Avoid_Star\\Console.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{623AEC41-BAFD-427A-B543-AB317689E5A2}|..\\ToyProject01\\ToyProject01.vcxproj|C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\ConsoleFunc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,43 +25,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
-              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
-              "RelativeDocumentMoniker": "..\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
-              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
-              "RelativeToolTip": "..\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ConsoleAdventure\\main.c",
+              "RelativeDocumentMoniker": "..\\ConsoleAdventure\\main.c",
+              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ConsoleAdventure\\main.c",
+              "RelativeToolTip": "..\\ConsoleAdventure\\main.c",
+              "ViewState": "AQIAAMIAAAAAAAAAAAAAAH8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-07-29T16:23:32.663Z"
+              "WhenOpened": "2024-08-05T14:23:42.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "lecture25.c",
-              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\HelloWorld\\lecture25.c",
-              "RelativeDocumentMoniker": "lecture25.c",
-              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\HelloWorld\\lecture25.c",
-              "RelativeToolTip": "lecture25.c",
-              "ViewState": "AQIAAEsAAAAAAAAAAADwv0gAAAABAAAA",
+              "DocumentIndex": 3,
+              "Title": "Console.c",
+              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\Avoid_Star\\Console.c",
+              "RelativeDocumentMoniker": "..\\Avoid_Star\\Console.c",
+              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\Avoid_Star\\Console.c",
+              "RelativeToolTip": "..\\Avoid_Star\\Console.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-07-29T16:16:36.274Z"
+              "WhenOpened": "2024-08-05T14:06:50.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConsoleFunc.h",
+              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\ConsoleFunc.h",
+              "RelativeDocumentMoniker": "..\\ToyProject01\\ConsoleFunc.h",
+              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\ConsoleFunc.h",
+              "RelativeToolTip": "..\\ToyProject01\\ConsoleFunc.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-05T14:00:56.159Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\main.c",
-              "RelativeDocumentMoniker": "..\\MonsterDataManager\\main.c",
-              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\main.c",
-              "RelativeToolTip": "..\\MonsterDataManager\\main.c",
-              "ViewState": "AQIAABgAAAAAAAAAAAAkwCcAAAAMAAAA",
+              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\main.c",
+              "RelativeDocumentMoniker": "..\\ToyProject01\\main.c",
+              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\main.c",
+              "RelativeToolTip": "..\\ToyProject01\\main.c",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-07-29T15:50:58.966Z",
+              "WhenOpened": "2024-08-05T14:00:46Z",
               "EditorCaption": ""
             }
           ]
@@ -70,15 +87,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Function.c",
-              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\Function.c",
-              "RelativeDocumentMoniker": "..\\MonsterDataManager\\Function.c",
-              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\MonsterDataManager\\Function.c",
-              "RelativeToolTip": "..\\MonsterDataManager\\Function.c",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAVAAAA",
+              "DocumentIndex": 2,
+              "Title": "ConsoleFunc.c",
+              "DocumentMoniker": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\ConsoleFunc.c",
+              "RelativeDocumentMoniker": "..\\ToyProject01\\ConsoleFunc.c",
+              "ToolTip": "C:\\Users\\dongy\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Cstudy_0610\\ToyProject01\\ConsoleFunc.c",
+              "RelativeToolTip": "..\\ToyProject01\\ConsoleFunc.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-07-29T15:58:45.628Z",
+              "WhenOpened": "2024-08-05T14:01:05.367Z",
               "EditorCaption": ""
             }
           ]

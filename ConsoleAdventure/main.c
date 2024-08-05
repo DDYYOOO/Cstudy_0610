@@ -125,7 +125,7 @@ void SeelectStartMenu()
 
 void ShowGameRecord()
 {
-
+	printf("!!");
 }
 
 void GameInfo() // 게임의 정보를 출력하는 함수를 총괄
