@@ -25,7 +25,6 @@ void StartMenu(void)
 
 }
 
-
 void GameOver(void)
 {
 	while (true)
@@ -40,7 +39,6 @@ void GameOver(void)
 			break;
 	}
 }
-
 
 int main()
 {

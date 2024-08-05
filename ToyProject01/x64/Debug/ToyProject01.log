@@ -1,4 +1,5 @@
 ﻿  ConsoleFunc.c
   main.c
   코드를 생성하고 있습니다...
-  ToyProject01.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\ToyProject01.exe
+main.obj : error LNK2005: map이(가) ConsoleFunc.obj에 이미 정의되어 있습니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\ToyProject01.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.

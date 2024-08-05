@@ -5,7 +5,7 @@
 #define ROWS 30 // 가로 
 #define COLS 30 // 세로 Collums(기둥)
 
-char map[COLS][ROWS] = {0};		// 맵 안에 있는 데이터
+char map2[COLS][ROWS] = {0};		// 맵 안에 있는 데이터
 char mapString[(COLS * (ROWS + 1)) + 1];  // 데이터로부터 출력하는 문자열
 // ROWS + 1 : 개행 문자\n을 더해준 것
 // (COLS + ROWS) : 
@@ -64,7 +64,7 @@ void RenderMap()
 	{
 		for (int j = 0; j < ROWS; j++)
 		{
-			mapString[mapIndex++] = map[i][j];
+			mapString[mapIndex++] = map2[i][j];
 
 		}
 		mapString[mapIndex++] = '\n';
@@ -118,6 +118,16 @@ void GoToTargetPos(int a, int b, char* s)
 	printf("%s", s);
 }
 
+void SeelectStartMenu()
+{
+
+}
+
+void ShowGameRecord()
+{
+
+}
+
 void GameInfo() // 게임의 정보를 출력하는 함수를 총괄
 {
 
@@ -160,6 +170,32 @@ int main()
 	mapString[mapIndex] = '\0';
 #endif
 
+	SeelectStartMenu();
+
+	printf("1. 게임 시작 \n");
+	printf("2. 게임 기록 \n");
+	printf("3. 게임 종료 \n");
+	int selectNum = 0;
+	scanf_s("%d", &selectNum);
+	if (selectNum == 1)
+	{
+		printf("게임을 시작했습니다\n");
+	}
+	else if (selectNum == 2)
+	{
+		ShowGameRecord();
+	}
+	else if (selectNum == 3)
+	{
+		exit(0);
+	}
+	else
+	{
+		printf("잘못된 값을 입력했습니다\n");
+	}
+
+
+
 	Clear();
 	SetConsoleSize(50, 50);
 	SetConsoleCursorVisibility(0);
@@ -173,15 +209,12 @@ int main()
 	// 게임 맵 생성
 
 	// 게임 외벽 설정
-	MakeMap('#', map);
+	MakeMap('#', map2);
 
 	// 내벽 데이터 
-	InWall('#', map);
+	//InWall('#', map);
 
 	RenderMap();
-
-
-
 
 	while (1)
 	{
