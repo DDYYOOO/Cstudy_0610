@@ -4,6 +4,7 @@
 
 #define ROWS 30 // 가로 
 #define COLS 30 // 세로 Collums(기둥)
+#define filename "playerData.txt"
 
 char map2[COLS][ROWS] = {0};		// 맵 안에 있는 데이터
 char mapString[(COLS * (ROWS + 1)) + 1];  // 데이터로부터 출력하는 문자열
@@ -133,6 +134,72 @@ void GameInfo() // 게임의 정보를 출력하는 함수를 총괄
 
 }
 
+typedef struct PlayerData
+{
+	char name[30];	// 이름을 저장하기 위한 배열
+	int score;	// 정수형 점수를 저장
+
+}PlayerData;
+
+
+void SavePlayerData(PlayerData* player, int totalCount)
+{
+	FILE* fp = fopen(filename, "w");
+
+	if (fp == NULL)
+	{
+		perror("파일 쓰기 실패\n");
+	}
+
+	for (int i = 0; i < totalCount; i++)
+	{
+		fprintf(fp, "%s %d \n", player[i].name, player[i].score);
+	}
+
+	fclose(fp);
+
+}
+
+void LoadPlayerData(PlayerData* player, int* totalCount)
+{
+	FILE* fp = fopen(filename, "r");
+
+	if (fp == NULL)
+	{
+		perror("파일 읽기 실패\n");
+	}
+
+	int count = 0;
+	char ch;
+
+	if (fgetc(fp) != EOF)
+	{
+		count = 1;
+	}
+
+	fseek(fp, 0, SEEK_SET); // fp가 가라키는 주소를 파일의 시작으로 이동
+
+	while (fgetc(fp) != EOF)
+	{
+		ch = fgetc(fp);
+		if (ch == '\n')
+		{
+			count++;
+		}
+	}
+
+	fseek(fp, 0, SEEK_SET);
+
+	*totalCount = count;
+
+	for (int i = 0; i < count; i++)
+	{
+		fscanf_s(fp, "%s %d \n", (player + i)->name, 30, &(player + i)->score);
+	}
+
+	fclose(fp);
+}
+
 int main()
 {
 #if false	
@@ -169,6 +236,12 @@ int main()
 	}
 	mapString[mapIndex] = '\0';
 #endif
+
+	PlayerData allPlayerData[10];
+	int totalCount = 0;
+	
+	LoadPlayerData(allPlayerData, &totalCount);
+	printf("%s %d", allPlayerData[0].name, allPlayerData[0].score);
 
 	SeelectStartMenu();
 
@@ -215,6 +288,8 @@ int main()
 	//InWall('#', map);
 
 	RenderMap();
+
+
 
 	while (1)
 	{

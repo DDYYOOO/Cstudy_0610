@@ -3,34 +3,50 @@
 
 #define TOTALMAPROWS 60
 #define TOTALMAPCOLS 40
-#define TOYROWS 33
-#define TOYCOLS 33
+#define TOYROWS 40
+#define TOYCOLS 39
 
 
 char toymap[TOYCOLS][TOYROWS] = { 0 };
 char toymapString[(TOYCOLS * (TOYROWS + 1)) + 1];
 
+typedef struct Monster
+{
+	char name[30];
+	char grade[30];
+	int level;
+	int HP;
+	int MP;
+	
+}Monster;
 
-void MakeMap(char Wall, char(*map)[TOYROWS]) 
+
+void MonsterData(Monster* monster, int Count)
+{
+
+}
+
+
+void MakeMap(char Wall, char(*map)[TOYROWS])
 {
 	for (int i = 0; i < TOYCOLS; i++)
 	{
-		for (int j = 0; j < TOYROWS; j++)
+		for (int j = 0; j < TOYROWS ; j++)
 		{
 			map[i][j] = ' ';
 		}
 	}
-
+	// 게임 실행 맵
 	for (int i = 0; i < TOYCOLS; i++)
 	{
 		map[i][0] = Wall;
-		map[i][TOYCOLS - 1] = Wall;
+		map[i][TOYCOLS] = Wall;
 	}
 
 	for (int j = 0; j < TOYROWS; j++)
 	{
 		map[0][j] = Wall;
-		map[TOYROWS - 1][j] = Wall;
+		map[TOYROWS - 2][j] = Wall;
 	}
 }
 
@@ -69,8 +85,8 @@ void InputProcess(int* x, int* y)
 	}
 	else if (GetAsyncKeyState(VK_RIGHT) & 8001)
 	{
-		if (*x > 30)
-			*x = 30;
+		if (*x > 37)
+			*x = 37;
 		*x += 1;
 	}
 	else if (GetAsyncKeyState(VK_UP) & 8001)
@@ -81,15 +97,40 @@ void InputProcess(int* x, int* y)
 	}
 	else if (GetAsyncKeyState(VK_DOWN) & 8001)
 	{
-		if (*y > 30)
-			*y = 30;
+		if (*y > 36)
+			*y = 36;
 		*y += 1;
 	}
+}
+
+void PlayerAndMonsterData()
+{
+	GotoXY(45, 1);
+	printf("플레이어");
+	GotoXY(41, 3);
+	printf("이름 : ");
+	GotoXY(41, 5);
+	printf("점수 : ");
+	GotoXY(41, 7);
+	printf("HP : ");
+	GotoXY(41, 9);
+	printf("MP : ");
+	GotoXY(45, 13);
+	printf("몬스터");
+	GotoXY(41, 15);
+	printf("이름 : ");
+	GotoXY(41, 17);
+	printf("등급 : ");
+	GotoXY(41, 19);
+	printf("HP : ");
+	GotoXY(41, 21);
+	printf("MP : ");
 }
 
 void StartGame()
 {
 	int playerX = 15, playerY = 15;
+	int monsterX = 15, monsterY = 5;
 	MakeMap('#', toymap);
 	RenderMap();
 
@@ -98,6 +139,10 @@ void StartGame()
 		GoToTargetPos(0, 0, toymapString);
 		GoToTargetPos(playerX, playerY, "@");
 		InputProcess(&playerX, &playerY);
+
+		GoToTargetPos(monsterX, monsterY, "$");
+
+		PlayerAndMonsterData();
 
 		Sleep(100);
 	}
@@ -117,7 +162,7 @@ void ShowMenu()
 	printf("3. 게임 종료\n ");
 	GotoXY(20, 20);
 	printf("선택 : ");
-	GotoXY(26, 23);
+	GotoXY(26, 20);
 	scanf_s("%d", &playerinput);
 	system("cls");
 	if (playerinput == 1)
