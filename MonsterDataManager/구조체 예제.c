@@ -14,7 +14,7 @@ int Main()
 	MyIntPtr myintPtr = &myint;
 	printf("%d\n", *myintPtr);
 
-	struct Monster m1;
+	struct ToyMonster m1;
 	strcpy_s(m1.name, 30, "고블린");
 	printf("몬스터 이름 : %s\n", m1.name);
 

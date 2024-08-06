@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef struct Monster
+typedef struct ToyMonster
 {
 	char name[30];
 	char region[30];

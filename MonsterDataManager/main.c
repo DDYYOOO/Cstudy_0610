@@ -69,7 +69,7 @@ void LoadMonsterData(Monster* monsterlist, int* totalCount)
 
 	for (int i = 0; i < count; i++)
 	{
-		fprintf_s(fp, "%s %s %s\n", (monsterlist + i)->name, 30, (monsterlist + i)->region, 30, (monsterlist + i)->grade, 30);
+		fscanf_s(fp, "%s %s %s\n", (monsterlist + i)->name, 30, (monsterlist + i)->region, 30, (monsterlist + i)->grade, 30);
 	}
 
 	fclose(fp);

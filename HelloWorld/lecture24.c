@@ -25,7 +25,7 @@ typedef struct Player2
 	bool isplayerDead;
 }Player2;
 
-typedef struct Monster
+typedef struct ToyMonster
 {
 	char* MonsterName;
 	char* MonsterGrade;
