@@ -1,3 +1,12 @@
 ﻿  ConsoleFunc.c
-C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\ToyProject01\ConsoleFunc.c(52,10): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
-  ToyProject01.vcxproj -> C:\Users\dongy\OneDrive\바탕 화면\Cstudy_0610\HelloWorld\x64\Debug\ToyProject01.exe
+C:\Users\Administrator\Desktop\Cstudy_0610\ToyProject01\ConsoleFunc.c(53,10): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\ToyProject01\ConsoleFunc.c(53,10):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\ToyProject01\ConsoleFunc.c(53,10):
+  누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+  C:\Users\Administrator\Desktop\Cstudy_0610\ToyProject01\ConsoleFunc.c(53,10):
+  이 인수는 버퍼 크기로 사용됩니다.
+  
+C:\Users\Administrator\Desktop\Cstudy_0610\ToyProject01\ConsoleFunc.c(168,1): warning C4029: 선언된 정식 매개 변수 목록이 정의와 다릅니다.
+C:\Users\Administrator\Desktop\Cstudy_0610\ToyProject01\ConsoleFunc.c(287,7): warning C4101: 'playerinfo' :참조되지 않은 지역 변수입니다.
+  ToyProject01.vcxproj -> C:\Users\Administrator\Desktop\Cstudy_0610\HelloWorld\x64\Debug\ToyProject01.exe

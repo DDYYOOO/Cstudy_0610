@@ -2,7 +2,7 @@
 #include <string.h>
 #include "Function.h"
 
-#define filename "monsterManager.txt"
+#define filename "C:\\Users\\Administrator\\Desktop\\Cstudy_0610\\HelloWorld\\x64\\Debug\\monsterManager.txt"
 
 // 1. name, region, grade, level, 구조체 변수 선언해서 출력
 // 2. 구조체 배열 만들고 반복문으로 배열 출력
@@ -88,7 +88,8 @@ int main()
 
 	int totalMonsterCount = 0; // 몬스터 데이터에 몇번 Index에 저장되었는지
 	
-	LoadMonsterData(monsterGroup, &totalMonsterCount);
+	PrintMonsterList(monsterGroup, &totalMonsterCount);
+	//LoadMonsterData(monsterGroup, &totalMonsterCount);
 
 	while (1)
 	{

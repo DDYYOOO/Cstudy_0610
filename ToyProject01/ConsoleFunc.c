@@ -46,31 +46,39 @@ void SetConsoleSize(int _col, int _lines)
 
 void PlayerInfo()
 {
-	char playerinfo;
+	system("cls");
+	char playerinfo[30];
 	GotoXY(15, 15);
 	printf("ID를 입력하세요 : ");
-	scanf_s("%c", &playerinfo);
+	scanf_s("%s", playerinfo);
+	GotoXY(45, 2);
+	printf("%s", playerinfo);
 }
 
-void PlayerData(Player* player, int Count)
+void PlayerData(Player* player, int *Count)
 {
-	FILE* fp = fopen(toyfilename, "w");
-
-	if (fp == NULL)
-	{
-		perror("ToyProject01-PlayerData Error\n");
-	}
-
-	for (int i = 0; i < Count; i++)
-	{
-		fprintf(fp, "%s %d \n", player[i].name, player[i].score);
-	}
-
-	fclose(fp);
-
+	//FILE* fp = fopen(toyfilename, "w");
+	//
+	//if (fp == NULL)
+	//{
+	//	perror("ToyProject01-PlayerData Error\n");
+	//}
+	//
+	//for (int i = 0; i < Count; i++)
+	//{
+	//	fprintf(fp, "%s %d \n", player[i].name, player[i].score);
+	//}
+	//
+	//fclose(fp);
+	//
 }
 
 void MonsterData(Monster* monster, int Count)
+{
+
+}
+
+void playerDead()
 {
 
 }
@@ -97,6 +105,11 @@ void MakeMap(char Wall, char(*map)[TOYROWS])
 		map[0][j] = Wall;
 		map[TOYROWS - 2][j] = Wall;
 	}
+
+	for (int i = 1; i < TOYROWS; i++)
+	{
+		map[TOYROWS - 7][i] = Wall;
+	}
 }
 
 void RenderMap()
@@ -122,39 +135,59 @@ void GoToTargetPos(int a, int b, char* s)
 	printf("%s", s);
 }
 
-void InputProcess(int* x, int* y)
+void InputProcess(Player* player, bool playerbullet)
 {
 
 	if (GetAsyncKeyState(VK_LEFT) & 8001)
 	{
-		if (*x < 3)
-			*x = 3;
-		*x -= 2;
+		if (player->playerX < 3)
+			player->playerX = 3;
+		player->playerX -= 2;
 	}
 	else if (GetAsyncKeyState(VK_RIGHT) & 8001)
 	{
-		if (*x > 35)
-			*x = 35;
-		*x += 2;
+		if (player->playerX > 35)
+			player->playerX = 35;
+		player->playerX += 2;
 	}
 	else if (GetAsyncKeyState(VK_UP) & 8001)
 	{
-		if (*y < 2)
-			*y = 2;
-		*y -= 2;
+		if (player->playerY < 3)
+			player->playerY = 3;
+		player->playerY -= 2;
 	}
 	else if (GetAsyncKeyState(VK_DOWN) & 8001)
 	{
-		if (*y > 35)
-			*y = 35;
-		*y += 2;
+		if (player->playerY > 30)
+			player->playerY = 30;
+		player->playerY += 2;
+	}
+	else if (GetAsyncKeyState(VK_SPACE) & 8001)
+	{
+		if (!playerbullet)
+		{
+			player->playerbulletX = player->playerX;
+			player->playerbulletY = player->playerbulletY - 1;
+			playerbullet = true;
+		}
+
+		if (playerbullet)
+		{
+			player->playerbulletY--;
+			GoToTargetPos(player->playerbulletX, player->playerbulletY, "↑");
+
+			if (player->playerbulletY < 2)
+			{
+				playerbullet = false;
+			}
+		}
+
 	}
 }
 
-void PlayerBullet(int* _x, int* _y)
+void PlayerBullet(int* _x, int* _y, bool bullet)
 {
 	int bulletX = 0, bulletY = 0;
-	bool bullet = false;
 
 	if (GetAsyncKeyState(VK_SPACE) & 8001)
 	{
@@ -164,16 +197,18 @@ void PlayerBullet(int* _x, int* _y)
 			bulletY = *_y - 1;
 			bullet = true;
 		}
+
 		if (bullet)
 		{
 			GoToTargetPos(bulletX, bulletY, "↑");
 			bulletY--;
-
-			if (bullet < 2)
+		
+			if (bulletY < 2)
 			{
 				bullet = false;
 			}
 		}
+
 	}
 }
 
@@ -199,34 +234,78 @@ void PlayerAndMonsterData()
 	printf("HP : ");
 	GotoXY(41, 21);
 	printf("MP : ");
+	GotoXY(4, 36);
+	printf("총알 SPACE");
+	GotoXY(20, 35);
+	printf("위  ↑");
+	GotoXY(20, 36);
+	printf("아래 ↓");
+	GotoXY(27, 35);
+	printf("왼쪽  ←");
+	GotoXY(27, 36);
+	printf("오른쪽 →");
+
 }
 
 void StartGame()
 {
-	int playerX = 15, playerY = 15;
+	Player p1;
 	int monsterX = 15, monsterY = 5;
+	bool playerbullet = false;
 	MakeMap('#', toymap);
 	RenderMap();
 
 	while (1)
 	{
-		
 		GoToTargetPos(0, 0, toymapString);
-		GoToTargetPos(playerX, playerY, "■");
-		InputProcess(&playerX, &playerY);
-		PlayerBullet(&playerX, &playerY);
+		GoToTargetPos(p1.playerX, p1.playerbulletY, "■");
+		InputProcess(p1.playerX, p1.playerY, playerbullet);
+		//PlayerBullet(&playerX, &playerY, playerbullet);
+
+
+		if (GetAsyncKeyState(VK_SPACE) & 8001)
+		{
+			if (!playerbullet)
+			{
+				bulletX = playerX;
+				bulletY = playerY - 1;
+				playerbullet = true;
+			}
+
+			if (playerbullet)
+			{
+				bulletY--;
+				GoToTargetPos(bulletX, bulletY, "↑");
+
+				if (bulletY < 2)
+				{
+					playerbullet = false;
+				}
+			}
+
+		}
 
 		GoToTargetPos(monsterX, monsterY, "$");
 
 		PlayerAndMonsterData();
 
-
+		if (playerX == monsterX && playerY == monsterY)
+		{
+			GoToTargetPos(playerX, playerY, "@");
+			system("cls");
+			GotoXY(23, 20);
+			printf("죽었습니다");
+			break;
+		}
 		Sleep(50);
+		
 	}
 }
 
 void ShowMenu()
 {
+	char playerinfo[30];
+	int totalCount = 0;
 	int playerinput = 0;
 	int playerX = 15, playerY = 15;
 	GotoXY(19, 15);
@@ -244,16 +323,7 @@ void ShowMenu()
 	system("cls");
 	if (playerinput == 1)
 	{
-		PlayerInfo();
-		if (playerinput == 1)
-		{
-			StartGame(&playerX, &playerY);
-		}
-		else if (playerinput == 2)
-		{
-			ShowMenu();
-		}
-
+		StartGame();
 	}
 	if (playerinput == 2)
 	{

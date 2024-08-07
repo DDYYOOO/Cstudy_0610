@@ -14,6 +14,10 @@ typedef struct Player
 {
 	char name[30];
 	int score;
+	int playerX;
+	int playerY;
+	int playerbulletX;
+	int playerbulletY;
 	int level;
 	int HP;
 	int MP;

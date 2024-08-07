@@ -239,8 +239,9 @@ int main()
 
 	PlayerData allPlayerData[10];
 	int totalCount = 0;
-	
-	LoadPlayerData(allPlayerData, &totalCount);
+	SavePlayerData(allPlayerData, &totalCount);
+
+	//LoadPlayerData(allPlayerData, &totalCount);
 	printf("%s %d", allPlayerData[0].name, allPlayerData[0].score);
 
 	SeelectStartMenu();
